@@ -55,7 +55,7 @@ namespace ExEdit {
         } obj_data;
         int32_t obj_line; // obj_max_w
         int32_t obj_max_h;
-        int32_t no_alpha; // obj_editにアルファ情報がないフラグ PixelYC*と同じように扱うようになる
+        int32_t no_alpha; // obj_editにアルファ情報がないフラグ
         enum class ObjectFlag {
             bit16 = 1 << 16
         } object_flag;
