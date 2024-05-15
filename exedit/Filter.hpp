@@ -22,6 +22,7 @@ namespace ExEdit {
             HasExdata    = 1 << 10,
             BasicEffect  = 1 << 15,
             Audio        = 1 << 21,
+            CameraControl= 1 << 23,
             Control      = 1 << 24,
             ExEditFilter = 1 << 26,
 
