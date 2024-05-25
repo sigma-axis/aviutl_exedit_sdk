@@ -61,6 +61,9 @@ namespace ExEdit {
             inline static constexpr const DWORD EXTENDEDFILTER_SELECT_DROPDOWN = 0x1e1c;
             // HIWORD(wparam) : list_id
 
+            inline static constexpr const DWORD EXTENDEDFILTER_COLOR_PICKER = 0x1e1d;
+            // lparam : PixelYCA
+
 // 0x1e1e ?
 // 0x1e1f ?
 // 0x1e20 ?
