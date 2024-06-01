@@ -29,6 +29,60 @@ namespace ExEdit {
 
         inline static constexpr const DWORD FILTER_FOLD         = 4500;
 
+    }
 
+
+    namespace ExtendedFilter {
+        namespace Message {
+            inline static constexpr const DWORD WM_EXTENDEDFILTER_COMMAND = WM_USER + 0x302;
+        }
+        namespace CommandId { // LOWORD(wparam)
+
+            inline static constexpr const DWORD EXTENDEDFILTER_APEND_FILTER = 0x1e14;
+            // lparam : ?
+
+            inline static constexpr const DWORD EXTENDEDFILTER_DELETE_FILTER = 0x1e15;
+
+            inline static constexpr const DWORD EXTENDEDFILTER_D_AND_D = 0x1e16;
+            // lparam : ?
+
+            inline static constexpr const DWORD EXTENDEDFILTER_SPLIT_OBJECT = 0x1e17;
+            // lparam : ?
+
+            inline static constexpr const DWORD EXTENDEDFILTER_UPDATE_TRACK = 0x1e19;
+            // HIWORD(wparam) : track_id
+
+            inline static constexpr const DWORD EXTENDEDFILTER_UPDATE_CHECK = 0x1e1a;
+            // HIWORD(wparam) : check_id
+
+            inline static constexpr const DWORD EXTENDEDFILTER_PUSH_BUTTON = 0x1e1b;
+            // HIWORD(wparam) : button_id
+
+            inline static constexpr const DWORD EXTENDEDFILTER_SELECT_DROPDOWN = 0x1e1c;
+            // HIWORD(wparam) : list_id
+
+            inline static constexpr const DWORD EXTENDEDFILTER_COLOR_PICKER = 0x1e1d;
+            // lparam : PixelYCA
+
+// 0x1e1e ?
+// 0x1e1f ?
+// 0x1e20 ?
+
+            inline static constexpr const DWORD EXTENDEDFILTER_UPDATE_OBJECT_LENGTH = 0x1e22;
+            // lparam : left == 1, right == 2, other == 0
+
+            inline static constexpr const DWORD EXTENDEDFILTER_RUN_UNDO = 0x1e26;
+
+            inline static constexpr const DWORD EXTENDEDFILTER_MAIN_MOUSE_DOWN = 0x1e6e;
+
+            inline static constexpr const DWORD EXTENDEDFILTER_MAIN_MOUSE_UP = 0x1e6f;
+
+            inline static constexpr const DWORD EXTENDEDFILTER_MAIN_MOUSE_MOVE = 0x1e70;
+
+            inline static constexpr const DWORD EXTENDEDFILTER_MAIN_KEY_DOWN = 0x1e71;
+
+            inline static constexpr const DWORD EXTENDEDFILTER_MAIN_KEY_UP = 0x1e72;
+
+        }
     }
 }
