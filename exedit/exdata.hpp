@@ -17,12 +17,12 @@ namespace ExEdit {
 
     namespace Exdata {
         struct ExdataColor {
-            unsigned char b, g, r;
+            unsigned char r, g, b;
             unsigned char padding;
         };
 
         struct ExdataColorOpt {
-            unsigned char b, g, r;
+            unsigned char r, g, b;
             unsigned char no_color;
         };
 
